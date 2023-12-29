@@ -1,0 +1,194 @@
+@charset "UTF-8";
+/* reset */
+/* line 4, scss/reset.scss */
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, a, button, abbr, address, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, footer, header, section, summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+}
+
+/* line 5, scss/reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 6, scss/reset.scss */
+body, html {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Pretendard Variable','Noto Sans DemLight', "맑은 고딕", "Malgun Gothic", Dotum, sans-serif;
+	font-size: 16px;
+	color: #333;
+	letter-spacing: -0.045rem;
+}
+
+/* line 8, scss/reset.scss */
+ol, ul {
+	list-style: none;
+}
+
+/* line 9, scss/reset.scss */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* line 10, scss/reset.scss */
+a[href^="tel"] {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* line 11, scss/reset.scss */
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* line 12, scss/reset.scss */
+address {
+	font-style: normal;
+}
+
+/* line 13, scss/reset.scss */
+button {
+	display: inline-block;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+/* line 14, scss/reset.scss */
+select {
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+}
+
+/* line 15, scss/reset.scss */
+select::-ms-expand {
+	display: none;
+}
+
+/* line 17, scss/reset.scss */
+input, button, a, select, option {
+	font-family: inherit;
+	font-size: inherit;
+}
+
+/* line 18, scss/reset.scss */
+input[type="checkbox"], input[type="radio"] {
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+	position: absolute;
+	vertical-align: middle;
+}
+
+/* line 19, scss/reset.scss */
+input[type="checkbox"]::-ms-check, input[type="radio"]::-ms-check {
+	border: solid 1px #fff;
+}
+
+/* line 21, scss/reset.scss */
+input[type="text"]::-ms-clear {
+	display: none;
+}
+
+/* line 22, scss/reset.scss */
+caption, hr {
+	overflow: hidden;
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 1px;
+	height: 1px;
+	background: 0 0;
+	font-size: 0;
+	color: transparent;
+	line-height: 0;
+	text-indent: 100%;
+	clip: rect(0, 0, 0, 0);
+}
+
+/* line 24, scss/reset.scss */
+pre {
+	word-break: break-all;
+	white-space: pre-line;
+}
+
+/* line 25, scss/reset.scss */
+li {
+	list-style: none;
+}
+
+/* line 26, scss/reset.scss */
+figure {
+	margin: 0;
+}
+
+/* line 27, scss/reset.scss */
+img {
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	border: none;
+}
+
+/* line 28, scss/reset.scss */
+em, i {
+	font-style: normal;
+}
+
+/* line 29, scss/reset.scss */
+strong {
+	font-weight: normal;
+}
+
+/* common */
+/* line 32, scss/reset.scss */
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* global class */
+/* line 35, scss/reset.scss */
+.hidden {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	font-size: 0;
+	line-height: 0;
+}
+
+/* scroll custom */
+/* line 38, scss/reset.scss */
+::-webkit-scrollbar {
+	width: 14px;
+}
+
+/* line 39, scss/reset.scss */
+::-webkit-scrollbar-thumb {
+	border: solid transparent;
+	background-clip: padding-box;
+	border-radius: 8px;
+	background-color: #a6a6a6;
+}
+
+/* line 41, scss/reset.scss */
+::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+/* line 42, scss/reset.scss */
+::-webkit-scrollbar-button {
+	display: none;
+}

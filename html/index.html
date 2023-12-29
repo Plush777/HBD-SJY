@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="모두 준영이의 생일을 축하해주세요!">
+    <meta property="og:image" content="../../images/img/og.png">
+    <meta property="og:title" content="To.SJY">
+    <meta property="og:description" content="모두 준영이의 생일을 축하해주세요!">
+    <meta property="og:url" content="">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="To.SJY">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:image" content="../../images/img/og.png">
+    <meta name="twitter:description" content="모두 준영이의 생일을 축하해주세요!">
+    <link rel="shortcut icon" id="favi" href="../../images/ico/ico-favicon01.png" />
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
+    <title>To. SJY</title>
+</head>
+<body>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <noscript>
+        <a href="https://support.google.com/adsense/answer/12654?hl=ko" target="_blank">자바스크립트가 활성화 되어있지 않은 상태입니다.</a>
+    </noscript>
+    
+    <div id="root" style="opacity: 0;">
+        <audio controls id="song">
+            <source src="../images/mp3/grow-up.mp3" type="audio/mpeg">
+            브라우저가 오디오를 지원하지 않습니다.
+        </audio>
+
+        <div id="wrap">
+            <button type="button" id="btnBack" aria-label="이전 페이지로">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="800px" width="800px" version="1.1" id="Capa_1" viewBox="0 0 219.151 219.151" xml:space="preserve">
+                    <g>
+                        <path d="M109.576,219.151c60.419,0,109.573-49.156,109.573-109.576C219.149,49.156,169.995,0,109.576,0S0.002,49.156,0.002,109.575   C0.002,169.995,49.157,219.151,109.576,219.151z M109.576,15c52.148,0,94.573,42.426,94.574,94.575   c0,52.149-42.425,94.575-94.574,94.576c-52.148-0.001-94.573-42.427-94.573-94.577C15.003,57.427,57.428,15,109.576,15z"/>
+                        <path d="M94.861,156.507c2.929,2.928,7.678,2.927,10.606,0c2.93-2.93,2.93-7.678-0.001-10.608l-28.82-28.819l83.457-0.008   c4.142-0.001,7.499-3.358,7.499-7.502c-0.001-4.142-3.358-7.498-7.5-7.498l-83.46,0.008l28.827-28.825   c2.929-2.929,2.929-7.679,0-10.607c-1.465-1.464-3.384-2.197-5.304-2.197c-1.919,0-3.838,0.733-5.303,2.196l-41.629,41.628   c-1.407,1.406-2.197,3.313-2.197,5.303c0.001,1.99,0.791,3.896,2.198,5.305L94.861,156.507z"/>
+                    </g>
+                </svg>
+            </button>
+            <div id="dayCountPage">
+                <div class="titleWrap">
+                    <div class="titleBox">
+                        <div id="lottie-pop"></div>
+                        <h2 class="titleText md">서준영의 15번째 생일을 진심으로 축하해요!</h2>
+                    </div>
+                    <p class="description" id="desc">
+                        <!--  -->
+                    </p>
+                </div>
+    
+                <div class="counterWrap">
+                    <p id="dDay">
+                        <!--  -->
+                    </p>
+                    <p id="time">
+                        <!--  -->
+                    </p>
+                </div>
+    
+                <a href="#intro" class="btn disabled" id="btnGift">선물 받으러가기</a>
+            </div>
+
+            <div class="fix">
+                <a href="#social" id="btnFix">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72" height="72" viewBox="0 0 72 72" fill="none">
+                        <rect width="72" height="72" fill="url(#pattern0)"/>
+                        <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_36_2267" transform="scale(0.0138889)"/>
+                        </pattern>
+                        <image id="image0_36_2267" width="72" height="72" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAC9FBMVEUAAADFf1NfO1rdjkD99k8zYbLIawf0kAfifQNPVPI6V6xtRq/MehudXBwfSKfUcgpfVsVGY7wiULirWgnirWG2YwyxUQjKbw0qSajHcBHfkCObTxnNfh/1ryPXjCHunjXllBkgWcg+asf54mDxi93KawbEaQrxoiErT6D1x1X3qTrRcA/epjOeUcQ9bc0lS7XkqyrCI3dRf9PAW8mmCXTZK7XpeXKCVczEZwTlfQX4tVvg2D1VhNvqaIVUZtNbXpLiljFuOproW3r6s1v29Vf1nxq9Zg3jhQ/vKrQoRKeXJqOuWAvmMrb3rEFBOYd9dInJNVdyHoBVYNfAKk3ruD6wXtGrJqjPNFfw5TlAT+w5Snf79FlyWGfwgdn/+JXsmhH/nCH/+Yr/oiP/+H/9rBf/lh/1oxRqMwL/tCP5qBXxoBP/6z3/5jf/1DP/2TL/yTD/pyPhjAvdhgn/xDj/zTf/uC//yTrZfgb/xC7/3TH/rSL/sht0PQX/+7T/+qz/+p7/vTHlkg3/4jL/oB79oxf/7UT/tyj5oBSQVQrolg/UdgT/+qX/91j/wDf/viv/sSr0mw3//MH/uijObwP//cv/9nL/4z59RAb/0Tj/0DD/qyiHTQj//dT/+7v/9l//8UvsigX//d396mr9qBr/uQvBYQk1Z9onXtf/3Fv/603/5Uj/yhWaYQ4jV8n/7oo3X/D/8Hn/4Wn/92j//uf/6Hn/vxX/qQj/ogdlV93/2Tr/1xnVfAr/sAnmTG/+1FD+z0bq1T2qgCOaaxz5QMT/20TqpSg+M5zeQmTh0ljYpCH7mQX7sUzbvDi7hSBkV1/EliXLgRp9ktzzZtF5asBYW6m9oTuEZuibbkL1yCbktSL8qOU+Sr9KMF7y4Fw+JkjnxkWzbxKfZIuzhmh9YmXNtUjxuTXJjOiqb9+embjqm5OFHok3KX/XxU2bMURmSzz23bXtb6oiG1bzyDz76dL54r+5gEXidDiatM2VsM2csMsUDz7cex0WiH8pAAAAXnRSTlMABw8S/v39/v7+IvxKIP3F/v7+lyFy+pyWh31RMP79/PredU7z5rGrUjr+/v389rxdQfz8/Pn5+PPpysjGe0z+/Pr58OvW1rZ5OefIsphy49jHk493X/764NXIxKeY3P9uewAACm9JREFUWMOMlHtMUmEUwFMr0pIa2Up6WdpzlT1Wrcd62nP1T6u2XrYWCw3JNpFQoBpLY8ucMnmNVKI7EIhXCaQhDGGpqNEoTW3OHq7m5tbW4//Od7mXp3/0A2X3nHN/nO9832XamW15V/ZlTJuCdadz06b9P6d8ocH0C2f2ZaUkJFJO9x7enQvR/+T49nk6i2UwL+/KuYy4u7IO9/b27s4CIzDlrRlnVsYsZctsk077I2/kO/SVv/JEaiRxdj0S0U+vQZymb56zJHGhK7du3RtVZeTTTBtDoR/plnRg56njW8KuFPqyA8uXL+Xbw/D5S4+soc/JjOktda9Wq920L3K9iLbRF9qptVgs6YPfR0byduYvOpGatnnNkeKbPT3GdhKj0WjnFx+hz4n0vG+TVqddEV3c2tk+306dTosGNTLy/VW6Rbfi8pEHLrsRLCJ9k/T6tWvXrRp9iXL9jvUY4+YxUnUC1mJaGTOy7b6NOoAYFPD+603QtFforY8anr4k+D2xo6Njh9GIuUCVEl7b2kX5MdNOObX9k8lk0m4L5YUH9eWACzO2y6zCJ08RpOhQB3DY0G7HHDnZmcS9GXEHYDa0+GlbKDRoAV59vYHZjTJz/RPE0ygTXSA69LPQAE09RE0lcYJKo33a5gu9QnOa99eBGW9ZhQ2IqAs+/3R0dXXt+NNQb26zY86cBalJotR8Kmycbx7MyfJhGSzLcK8eh3ARNEx0TfyEaGP9XZsRc1Cyk02LqGjjTCadbj/yaO4KhcLGxkbSRdIIGggLAbMSc9QtTDKtfQMbB/MOe1rvIoQxMnjhnYQleNrMgZ6STBknffjGfXjnwJStj3CiMhJSgrL3HpkVyatDB2A2jWaa0e+AfgoLC+8BURkQ50BAkZnjclIWJP4CnIeNo310Ykab2VwIRG1Il+hAmM2tPJdz1+J40ZaDVCrtG8VlbzED1xCkjSTqwNOozmZ3BOZmJh4A6v7XDszT2tpqvX4dHi5CFsc1cOBAhdUKpW7MSclOy81dl5USPQDUzoCLZ0MiK6gApCONYIg6cA0S2WxcR2AXvaCg4FJu5ABQ36odmNtm02g0VqkU/o9qNFLCBy9440hRAjJSq0Zjs9laipyUDdOBiCjj4kyni9fSgptG+4Lezs5O70C3VIrLpPgbLkbH8USwzw114GmBliTgKYiIMo9SnJinBTEWfC5ghhH3vYC74S/Mi7FOIiEQ94/hxe4i51BNTU3BOlK0YFbAUet2Q2aDGOoEcpVKJRcwO5texOJlEgn4JlXQA9Xux87ivj179mQRnrS5aqerzON2e/oF8HXegfFuYHxgsimO7nB8csD7XM5ken9BPZcRUM/PjOzanF0UJ5/r8fg3MAXe8dGmphoEfCQQSYxOeuXMoMfj4cK4Y85StjrglHC5Hv/YwKRerzcY9Ijm5ubpscA1RFEaFXQP9Pk93LJyJyV6vNOOqQOO8jIuR+E3GPx+GaqsqqpqrmpOQA9RyMlkMr/fb/AruNzH5c8C6mxStGQXJcAo55VxFApFW1ubDMFisaqmQobTBigUHG4ZLlqdSo5oFqWOIeHxSks5HI6CTbhYYaqIF46MFdaw2QooLS3l3a9m1KlXkUOi46LaWh5ylSqVbPatihIEK54SFsREFbfYbGUpSIDaWiSKDGkhEhVJQAUgmRJMIpGoJBkReJAGHAhJdRGI7hCilGMgKuYXVVdLANCBamhouKenZ3iogrRBJyg0PDyEmgGFpBpRxC+uU89aQB7HWWokIgDd0mWfxXIBoAoqRQRD/SoUkYs/5ywFCVFcyUCi+bEiRmWEHHja4Ba5HB6FIOGpCDKZREjw+Wq09tnDRNGzysrbYXJUTLlKjKNiekmRl6kKh1QCpvgqUTqF6F8n9vrSVBzHcXxH2Sla1kY6LfNWzLSZmElJd4skErrQlQomh1qtpNzKVtaDLQ+7QRntwcI9KBirJ/sDhBGUtEDSmriQSMoLgiiFBt2f9Pn+zjl5Sq3orTi8vfjudy7upzcSwTcEaoA5McoX67p+hXW9S/4SqNCppNDSIgj4hYhtGiRGwLTU19cL+eFwrLuz6xGrAQirQfq8q7M7Fg4X0g8SFRG9FhXkvGfxiiI5J1FjomzkAp1P5/D75+iD8niOzp8LI2UJ4SQiSfTemmMPyBBX7LRbMFKLUM+geqGtrdWDkwCnkzqcQDjwnta2NjgIM7UA8s8NZCknZMDuJ4gGkqRGGVJJOJ9lqFFQfo5Bc/KTucolEnDcY5A8EUZSICQrSJmIIGWigrWDvZUbD3LSRWue67Z4vYAgsYFUkEywLsoQk2i5xbJRvUE3llq1k0lLTfIiQUICQU2uy+fptkLK+VediTzA6LKrqbUNzw3RQN5Rvd5g0OkMqw5Khy3gcN/ykqQ4EgSJ+vA4dC0cSyZwpyGIJIE54tbeQ4N9zw2G8vKN0q02KI0k4oCSQwMRRN3B+6Oulx3XToUGEi6EkUgS4Iif1un7osbjuwzaSmmRTHE6bpBwtjKnyXUDt14Wu28+eUJ/1GJ5BDGpUYDj/aS7PxytK9EZtHoGZe7Zk3RbzgCKMEeGEByFG8HVX9hEtTIpIoq3vqfKdYN7NmrLc3aRsxmbiiGH22LFdRJplp0bFyCpciXDIV+CvkUSrla6Opx9hpQOq50DCE45NieVH+3+M1YboGYFohTtRqI7FOrALqegbGhwaKWAEolEvjk6nNJqa/blGPYBmlcE6MEwRoJ04gTucB4GqUr0vX/Tr+ul9O3t7aMTExOjn79+6dlSVTX2dMGCBVptiQaVFOGF8YBzSvLcbnKBgiVxI+8nJ8chUHo89lBr1vT0VOp1KYOupka7O03awRXlLA4GnHZFunr6NqPkAH2bHH+q9Pq1Fo1hGC1VU1W1Dw4rDRu0hcG4w+7/KXloKiRJb/HUUD96Mz7e/xy9Q3g4unt3LraKquabfpFopTAWclGXPtDrFKPZHI0afcZolOejrLoMze9xi/mAIhElWdRt5Ll5/kXo1DWHF4fcbI7HzQQZjcZczfTSs7FMkqRQZCk1F/pCoUIxYrNakD0eJChrxu13xsJfJVhKzTZL3BfyJSOizWazWs9Y3PY4HzUuStPM2FJJcksULCU/HwvjdWOiWZQYv9vuwEhw0jNLS7k/SmrKlvR1dHfm4W+YFYzkOAP8ogxN6fr129dnzjRTMZMUiizi8vJOQ/FCkRk41XA0Ffgnw/blaoHLTJfWKRvHjg3lt5CljhQwbJxgNduKlhasXPnsgNrZtHaTJKVnmWgoUJgK1lQWKIyBw9fmspXJ3FFQsHWJ2tn2cJsscfOLeYkiC4NRDAFjZ0yQnhaLq1iCf5moHGygIWkQG6qWUcyiICBJAROto3HwPi1u/2HsxPeunlrzFUlQASfDKDKYAqYvtUwzW2mQphxu+bG7Da/yTXwQWNwpFwfCV9cOax/cBzS7pJonfcNZdKQiK7vWVM2Do3i+2lS3KLekCAGaXVJfxaVHzjZsqOA0XMbS+VnZ2cUoe3EWVhVfmofSNP9axYYDmT+fqJzmf+KU7Q6n/oi3/02t/K0fmHJjeBVmgJMAAAAASUVORK5CYII="/>
+                        </defs>
+                    </svg>
+                    <span>생일축하 댓글 달기</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="modal" style="pointer-events: none;">
+        <div class="inner">
+            <button id="btnClose" aria-label="닫기">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="close"><path d="M13.41,12l6.3-6.29a1,1,0,1,0-1.42-1.42L12,10.59,5.71,4.29A1,1,0,0,0,4.29,5.71L10.59,12l-6.3,6.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l6.29,6.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z"/></svg>
+            </button>
+            <iframe src="https://lock.pub/TKBncYjPNl" scrolling="no">
+                <p>브라우저가 iframe을 지원하지 않아서 콘텐츠를 로드할 수 없습니다.</p>
+            </iframe>
+        </div>
+    </div>
+    <div id="caution">
+        <strong class="wait">잠깐!</strong>
+        <p class="desc">생일 편지를 보기위해선 암호를 입력해야해요.<br/>이상한 링크는 절대 아니니 안심하셔도 돼요. 😁<br/>(암호는 생일 당사자에게만 공개했어요.)</p>
+        <button id="btnCaution" class="btn">알았어요</button>
+    </div>
+    <script src="../js/index.js"></script>
+    <script type="module" src="../js/ui.js"></script>
+</body>
+</html>

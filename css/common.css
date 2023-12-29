@@ -1,0 +1,294 @@
+/* font */
+/* flex align */
+/* flex justify-content */
+/* flex direction*/
+/* flex row */
+/* scrollbar mixin */
+/* line 5, scss/common.scss */
+body {
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	-ms-touch-action: pan-y;
+	    touch-action: pan-y;
+	background-color: #EDD3ED;
+}
+
+/* line 7, scss/common.scss */
+#root {
+	display: none;
+	width: inherit;
+}
+
+/* line 9, scss/common.scss */
+#wrap {
+	width: inherit;
+	max-width: 768px;
+	margin: 0 auto;
+	padding-top: 60px;
+}
+
+/* line 11, scss/common.scss */
+#dayCountPage {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+/* line 14, scss/common.scss */
+.titleBox {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+/* line 15, scss/common.scss */
+.titleBox + .description {
+	text-align: center;
+}
+
+/* line 17, scss/common.scss */
+.titleText {
+	font-size: 2.25rem;
+	color: #000;
+}
+
+/* line 18, scss/common.scss */
+.titleText.md {
+	font-weight: 500;
+}
+
+/* line 22, scss/common.scss */
+.description {
+	font-size: 1.5rem;
+	color: #333;
+}
+
+/* line 24, scss/common.scss */
+#lottie-pop {
+	width: 80px;
+	height: 80px;
+}
+
+/* line 26, scss/common.scss */
+.counterWrap {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	row-gap: 5px;
+	margin-top: 50px;
+	border-radius: 8px;
+	padding: 30px 0;
+	width: 100%;
+	-webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+}
+
+/* line 28, scss/common.scss */
+.counterWrap p {
+	font-weight: 500;
+	color: #111;
+	min-width: 100px;
+	text-align: center;
+}
+
+/* line 29, scss/common.scss */
+.counterWrap #dDay {
+	font-size: 1.75rem;
+}
+
+/* line 30, scss/common.scss */
+.counterWrap #time {
+	font-size: 1.375rem;
+}
+
+/* line 32, scss/common.scss */
+.counterWrap + .btn {
+	margin-top: 50px;
+}
+
+/* line 35, scss/common.scss */
+.shareWrap {
+	margin-top: 100px;
+}
+
+/* line 36, scss/common.scss */
+.shareWrap .text {
+	font-size: 1.25rem;
+	color: #000;
+	font-weight: 500;
+	text-align: center;
+}
+
+/* line 39, scss/common.scss */
+.shareList {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-column-gap: 10px;
+	   -moz-column-gap: 10px;
+	        column-gap: 10px;
+	margin-top: 20px;
+}
+
+/* line 41, scss/common.scss */
+.shareItem {
+	width: 50px;
+	height: 50px;
+}
+
+/* line 42, scss/common.scss */
+.shareItem.ka button {
+	background-image: url("../images/ico/ico-kakao.png");
+}
+
+/* line 43, scss/common.scss */
+.shareItem.twit button::before {
+	width: 30px;
+	height: 30px;
+	background-image: url("../images/ico/ico-x.png");
+}
+
+/* line 44, scss/common.scss */
+.shareItem.fb button {
+	background-image: url("../images/ico/ico-facebook.png");
+}
+
+/* line 45, scss/common.scss */
+.shareItem.myUrl button {
+	background-image: url("../images/ico/ico-link.png");
+}
+
+/* line 46, scss/common.scss */
+.shareItem button {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30px;
+	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+	        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+	background-color: #fff;
+}
+
+/* line 49, scss/common.scss */
+.shareItem button::before {
+	content: '';
+	border-radius: inherit;
+	background-repeat: inherit;
+	background-position: inherit;
+	background-size: inherit;
+}
+
+/* line 53, scss/common.scss */
+.btn {
+	min-width: 130px;
+	height: 50px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	font-size: 1rem;
+	color: #fff;
+	font-weight: 700;
+	border-radius: 16px;
+	background-color: #7A297B;
+}
+
+/* line 58, scss/common.scss */
+#loading {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	row-gap: 10px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 1000;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	font-size: 1.5rem;
+	color: #000;
+	font-weight: 500;
+}
+
+/* line 62, scss/common.scss */
+#disqus_thread {
+	height: 602px;
+	padding: 30px 20px 20px 20px;
+	border-radius: 30px 30px 0 0;
+	background-color: #fff;
+}
+
+/* line 64, scss/common.scss */
+#reactions__container {
+	height: 162px;
+}
+
+/* line 66, scss/common.scss */
+.commentWrap {
+	margin-top: 100px;
+}
+
+/* line 67, scss/common.scss */
+.commentWrap p {
+	font-size: 1.25rem;
+	font-weight: 500;
+	margin-bottom: 20px;
+	text-align: center;
+}
