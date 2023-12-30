@@ -28,4 +28,4 @@ coverage
 *.sw?
 
 #api key
-./js/modules/config/config.js
+/js/modules/config/config.js
