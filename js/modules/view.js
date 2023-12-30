@@ -7,11 +7,16 @@ import {
 export function view() {
     const dDayDate = new Date("Feb 25, 2024, 0:00:00").getTime();
 
+    //setInterval 안에있는 timeDifference 변수를 전역변수로
+    let globalDifference;
+    // let globalDays;
+
     setInterval(() => {
         // 현재 날짜와 디데이 날짜의 차이 계산
         let currentDate = new Date().getTime();
-
         const timeDifference = dDayDate - currentDate;
+
+        globalDifference = timeDifference;
 
         // 남은 일수, 시간, 분, 초 계산
         let days = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
@@ -27,6 +32,7 @@ export function view() {
         $('#time').html(`${hours}:${minutes}:${seconds}`);
 
         days = Math.abs(days);
+        // globalDays = days;
 
         // 디데이가 지났을 경우
         if (timeDifference < 0) {
@@ -41,11 +47,32 @@ export function view() {
         //디데이 일경우
         if (days === 0) {
             $('#dDay').html(`드디어 오늘이네요! 생일 축하해요<br/>D-day`);
-            $('#dayCountPage #desc').text('어서 선물을 열어봐요!');
-            $('#time').remove();
-            $btnGift.removeClass('disabled');
         }
     }, 1000);
+
+    window.addEventListener('popstate', function () {
+        if (globalDifference < 0) {
+            setTimeout(() => {
+                $('#btnGift').removeClass('disabled');
+                $('[id*="Page"]').removeClass('childPage');
+            }, 1);
+        }
+    });
+
+    $(document).on('click', '#btnGift', function (e) {
+        // 디데이가 지났을 경우
+        if (globalDifference < 0) {
+            setTimeout(() => {
+                $('[id*="Page"]').removeClass('childPage');
+            }, 1);
+        }
+
+        // 디데이가 지나지 않았을 경우
+        if (globalDifference > 0) {
+            alert('2024년 2월 25일에 오픈할 수 있어요.');
+            e.preventDefault();
+        }
+    });
 
     $(document).on('click', '#envelope', function () {
         envelopeToggle.call(this);
@@ -74,10 +101,6 @@ export function view() {
         handleLyrics();
         handleOpacity('#btnPlay', 0, -1);
         lottieCreate('lottie-music', 'https://lottie.host/a21ef7d4-a041-443c-a162-14963fe55301/pQaVsxsnQ3.json');
-    });
-
-    $(document).on('click', '#btnBack', function () {
-        clickBackButton();
     });
 
     $(document).on('click', '#btnClose', function () {

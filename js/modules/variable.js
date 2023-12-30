@@ -38,7 +38,7 @@ export const dayCountPageHtml = `
         <div class="titleWrap">
             <div class="titleBox">
                 <div id="lottie-pop"></div>
-                <h2 class="titleText md">서준영의 15번째 생일을<br class="m550"/>진심으로 축하해요!</h2>
+                <h2 class="titleText md">서준영의 15번째 생일을 <br class="m550"/>진심으로 축하해요!</h2>
             </div>
             <p class="description" id="desc">
                 <!--  -->
@@ -59,7 +59,7 @@ export const dayCountPageHtml = `
 `;
 
 export const introPage = `
-    <div id="introPage">
+    <div id="introPage" class="childPage">
         <div class="titleWrap">
             <div class="titleBox">
                 <div id="lottie-eyes"></div>
@@ -89,7 +89,7 @@ export const introPage = `
 `;
 
 export const lyricsPage = `
-    <div id="lyricsPage">
+    <div id="lyricsPage" class="childPage">
         <div class="bulbs">
             <div class="bulb yellow"></div>
             <div class="bulb red"></div>
