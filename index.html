@@ -9,12 +9,12 @@
     <meta property="og:image" content="./images/img/og.png">
     <meta property="og:title" content="To.SJY">
     <meta property="og:description" content="모두 준영이의 생일을 축하해주세요!">
-    <meta property="og:url" content="">
+    <meta property="og:url" content="https://to-sjy.netlify.app/">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="To.SJY">
-    <meta name="twitter:url" content="">
+    <meta name="twitter:url" content="https://to-sjy.netlify.app/">
     <meta name="twitter:image" content="./images/img/og.png">
     <meta name="twitter:description" content="모두 준영이의 생일을 축하해주세요!">
     <link rel="shortcut icon" id="favi" href="./images/ico/ico-favicon01.png" />
@@ -51,7 +51,7 @@
                 <div class="titleWrap">
                     <div class="titleBox">
                         <div id="lottie-pop"></div>
-                        <h2 class="titleText md">서준영의 15번째 생일을 진심으로 축하해요!</h2>
+                        <h2 class="titleText md">서준영의 15번째 생일을<br class="m550"/>진심으로 축하해요!</h2>
                     </div>
                     <p class="description" id="desc">
                         <!--  -->
@@ -87,11 +87,13 @@
         </div>
     </div>
     <div id="modal" style="pointer-events: none;">
+        <div id="scrollHide" class="yType"></div>
+        <div id="scrollHide" class="xType"></div>
         <div class="inner">
             <button id="btnClose" aria-label="닫기">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="close"><path d="M13.41,12l6.3-6.29a1,1,0,1,0-1.42-1.42L12,10.59,5.71,4.29A1,1,0,0,0,4.29,5.71L10.59,12l-6.3,6.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l6.29,6.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z"/></svg>
             </button>
-            <iframe src="https://lock.pub/TKBncYjPNl" scrolling="no">
+            <iframe id="letter" src="https://lock.pub/TKBncYjPNl">
                 <p>브라우저가 iframe을 지원하지 않아서 콘텐츠를 로드할 수 없습니다.</p>
             </iframe>
         </div>
@@ -109,7 +111,7 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-DPCHQ0SWPW'); 
+    gtag('config', 'G-DPCHQ0SWPW');
     </script>
 </body>
 </html>

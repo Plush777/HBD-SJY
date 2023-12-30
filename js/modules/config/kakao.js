@@ -8,10 +8,9 @@ export function kakao() {
             requestUrl: location.href,
             templateId: config.kakaoTemplateId,
             templateArgs: {
-                PROFILE: '프로필 이미지 주소', // 프로필 이미지 주소 ${PROFILE}
-                THUMB: '썸네일 주소', // 썸네일 주소 ${THUMB}
-                TITLE: '제목 텍스트입니다', // 제목 텍스트 ${TITLE}
-                DESC: '설명 텍스트입니다', // 설명 텍스트 ${DESC}
+                THUMB: './images/img/og.png', // 썸네일 주소 ${THUMB}
+                TITLE: 'To. SJY', // 제목 텍스트 ${TITLE}
+                DESC: '모두 준영이의 생일을 축하해주세요!', // 설명 텍스트 ${DESC}
             },
         });
     };

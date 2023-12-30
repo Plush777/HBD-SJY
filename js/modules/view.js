@@ -71,7 +71,7 @@ export function view() {
 
     $(document).on('click', '#btnPlay', function () {
         handleSong('play');
-        handleLyrics('play', 'click');
+        handleLyrics();
         handleOpacity('#btnPlay', 0, -1);
         lottieCreate('lottie-music', 'https://lottie.host/a21ef7d4-a041-443c-a162-14963fe55301/pQaVsxsnQ3.json');
     });

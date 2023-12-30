@@ -14,19 +14,19 @@ export function changeFixButton() {
 
 export function handleLyrics() {
     const timerIndexArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
-    const timerMsArr = [24000, 28500, 34000, 40000, 46000, 51500, 57500, 60200, 62800, 68800, 74500];
+    const timerMsArr = [24500, 29100, 34500, 39800, 46300, 51500, 57500, 60200, 62800, 68800, 74500];
 
     setTimeout(() => {
         $('#musicLoader').addClass('active');
-    }, 1000);
+    }, 1500);
 
     setTimeout(() => {
         $('#musicLoader').removeClass('active');
-    }, 23000);
+    }, 23500);
 
     setTimeout(() => {
         handleOpacity('#btnNext', 1, 1);
-    }, 86500);
+    }, 84000);
 
     for (let i = 0; i < timerIndexArr.length; i++) {
         const index = timerIndexArr[i];
