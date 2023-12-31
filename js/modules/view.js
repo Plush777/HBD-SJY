@@ -5,7 +5,7 @@ import {
 } from "./control.js";
 
 export function view() {
-    const dDayDate = new Date("Feb 25, 2023, 0:00:00").getTime();
+    const dDayDate = new Date("Feb 25, 2024, 0:00:00").getTime();
 
     //setInterval 안에있는 timeDifference 변수를 전역변수로
     let globalDifference;
