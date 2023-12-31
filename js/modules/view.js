@@ -68,10 +68,7 @@ export function view() {
 
     $(document).on('click', '#envelope', function () {
         envelopeToggle.call(this);
-        $(this).closest('#root').next('#modal').css('pointer-events', 'none');
-        setTimeout(() => {
-            handleModal('open');
-        }, 1500);
+        handleModal('open');
     });
 
     $(document).on('keydown', '#envelope', function (event) {
@@ -95,20 +92,17 @@ export function view() {
         lottieCreate('lottie-music', 'https://lottie.host/a21ef7d4-a041-443c-a162-14963fe55301/pQaVsxsnQ3.json');
     });
 
-    $(document).on('click', '#btnClose', function () {
+    $(document).on('click', '#btnCaution', function () {
         handleModal('close');
-        $('#envelope').removeClass('open');
+        $('#envelope').removeClass('open').addClass('close');
     });
 
     $('#btnCaution').on({
         'click': function () {
             const $caution = $(this).closest('#caution');
 
+            window.open('https://lock.pub/TKBncYjPNl', '_blank');
             $caution.removeClass('active');
-            $caution.prev('#modal').css('pointer-events', 'auto');
-            setTimeout(() => {
-                $caution.removeClass('zIndex');
-            }, 300);
         }
     });
 

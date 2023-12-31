@@ -110,9 +110,8 @@ export function addDisqus() {
 
 export function handleModal(state) {
     if (state === 'open') {
-        $('#modal,#caution').addClass('active');
-        $('#caution').addClass('zIndex');
+        $('#caution').addClass('active');
     } else if (state === 'close') {
-        $('#modal,#caution').removeClass('active');
+        $('#caution').removeClass('active');
     }
 }
