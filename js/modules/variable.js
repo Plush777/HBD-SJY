@@ -59,7 +59,7 @@ export const dayCountPageHtml = `
 `;
 
 export const introPage = `
-    <div id="introPage" class="childPage">
+    <div id="introPage">
         <div class="titleWrap">
             <div class="titleBox">
                 <div id="lottie-eyes"></div>
@@ -89,7 +89,7 @@ export const introPage = `
 `;
 
 export const lyricsPage = `
-    <div id="lyricsPage" class="childPage">
+    <div id="lyricsPage">
         <div class="bulbs">
             <div class="bulb yellow"></div>
             <div class="bulb red"></div>

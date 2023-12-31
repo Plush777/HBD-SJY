@@ -5,7 +5,7 @@ import {
 } from "./control.js";
 
 export function view() {
-    const dDayDate = new Date("Feb 25, 2024, 0:00:00").getTime();
+    const dDayDate = new Date("Feb 25, 2023, 0:00:00").getTime();
 
     //setInterval 안에있는 timeDifference 변수를 전역변수로
     let globalDifference;
@@ -54,19 +54,11 @@ export function view() {
         if (globalDifference < 0) {
             setTimeout(() => {
                 $('#btnGift').removeClass('disabled');
-                $('[id*="Page"]').removeClass('childPage');
             }, 1);
         }
     });
 
     $(document).on('click', '#btnGift', function (e) {
-        // 디데이가 지났을 경우
-        if (globalDifference < 0) {
-            setTimeout(() => {
-                $('[id*="Page"]').removeClass('childPage');
-            }, 1);
-        }
-
         // 디데이가 지나지 않았을 경우
         if (globalDifference > 0) {
             alert('2024년 2월 25일에 오픈할 수 있어요.');
