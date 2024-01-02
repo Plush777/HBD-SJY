@@ -95,7 +95,7 @@ timeDifference 값을 setInterval 구문 밖에서 사용해야했기 때문에,
 아래 코드는 브라우저 앞/뒤로가기 버튼을 눌렀을 때와 btnGift 버튼을 눌렀을 때의 이벤트 처리를 각각 해주었습니다.
 
 setTimeout을 준 이유는, 페이지가 바뀔 때 기존 콘텐츠는 지워지고 새로운 콘텐츠가 생성되는데,<br/>
-그 과정에서 #btnGift 셀렉터를 못찾는 것 같아서 약간의 딜레이를 주었습니다.
+그 과정에서 #btnGift 셀렉터를 즉시 못찾는 것 같아서 약간의 딜레이를 주었습니다.
 
 ```js
 window.addEventListener('popstate', function() {
@@ -123,7 +123,7 @@ $(document).on('click', '#btnGift', function(e) {
 편지를 클릭하면 주의 팝업이 뜨고, 알았어요 버튼을 누르면 해당 링크로 이동합니다.
 
 생일 편지를 구글드라이브에 pdf 형식으로 업로드하고, 아무나 열람하면 안되기 때문에 공유 URL을 <br/>
-[LOCK.PUB - URL 단축 암호화 서비스](https://lock.pub/) 로 정해진 패스워드를 입력해야만 볼 수 있게 해주었습니다.
+[LOCK.PUB - URL 단축 암호화 서비스](https://lock.pub/) 로 정해진 패스워드를 입력해야만 구글 드라이브로 가서 볼 수 있게 해주었습니다.
 
 <br/>
 
