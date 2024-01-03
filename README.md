@@ -1,12 +1,13 @@
 # HBD-SHY
 
 - 배포 URL : https://to-sjy.netlify.app/
-- 기술 : HTML5, SCSS, Javascript (jQuery)
+- 개발용 레포지토리 : https://github.com/Plush777/HBD-SJY-dev
+- 기술 : HTML5, SCSS, Javascript (with jQuery)
 - 개발도구 : VS code, gulp.js
-- 라이브러리 : lottie, [confetti.js by CoderZ90](https://github.com/CoderZ90/confetti), 카카오 공유 Api, Disqus
+- 라이브러리 : lottie, [confetti.js by CoderZ90](https://github.com/CoderZ90/confetti), KAKAO API, Disqus, Google analytics
 - 배포 : netlify
 - 기간 : 2023.12.23 ~ 2023.12.31 (약 8일)
-- 참고 사이트들 : [4시간 안에 동생 생일기념🎉 웹사이트 만들기 대작전!](https://velog.io/@yyeonggg/%EB%8F%99%EC%83%9D-%EC%83%9D%EC%9D%BC%EA%B8%B0%EB%85%90-%EB%9A%9D%EB%94%B1%EB%9A%9D%EB%94%B1-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0) , [HTML5 birthday by ayusharma](https://github.com/ayusharma/birthday)
+- 참고 사이트들 : [4시간 안에 동생 생일기념🎉 웹사이트 만들기 대작전!](https://velog.io/@yyeonggg/%EB%8F%99%EC%83%9D-%EC%83%9D%EC%9D%BC%EA%B8%B0%EB%85%90-%EB%9A%9D%EB%94%B1%EB%9A%9D%EB%94%B1-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0) , [HTML5 birthday by ayusharma](https://github.com/ayusharma/birthday) , [네이버코드](https://code.naver.com/main/)
 - 후기 : (작성예정)
 
 <br>
@@ -20,10 +21,35 @@
 
 <br/>
 
-## 요즘 시대에 리액트 대신 제이쿼리를?
-사실 요즘 대세인 기술은 React, Next.js 아니면 Vue 같은 SPA 프레임워크였지만, <br/>
-정확하게 알고쓰는 느낌도 아니고 아직까진 제이쿼리가 더 익숙하다 판단하여 제이쿼리를 선택했습니다. <br/>
+## 요즘 시대에 SPA 대신 제이쿼리를?
+사실 요즘 대세인 기술은 React, Vue 같은 SPA 프레임워크 아니면 아예 바닐라 자바스크립트로 가는 추세지만, <br/>
+정확하게 알고쓰는 느낌도 아니고 돔조작이 더 쉬워서 제이쿼리를 선택했습니다. <br/>
 (다음 프로젝트는 리액트로 도전!!)
+
+<br/>
+
+## 개발 폴더 구조
+![image](https://github.com/Plush777/HBD-SJY/assets/87457620/f4b15231-cadc-4c60-a063-bb7fc3b373a1)
+
+폴더구조는 루트에 index.html이 있고, images , scss , js 폴더로 각각 나눠주었습니다. <br/>
+
+### script module 
+```js
+import { hash } from '../js/modules/hash.js';
+import { view } from '../js/modules/view.js';
+import { favi } from '../js/modules/favi.js';
+import { kakao } from '../js/modules/config/kakao.js';
+
+$(function () {
+    kakao();
+    hash();
+    view();
+    favi();
+});
+```
+평소와 다른 점이있다면, 궁금해서 script module 형식으로 작업해보았습니다. <br/>
+기존엔 한 js 파일에 다 때려박았는데 (...) 리액트처럼 역할별로 분리 시켜놓으니까 <br/>
+가독성 측면에선 이 방법이 더 괜찮았던 것 같습니다.
 
 <br/>
 
@@ -39,6 +65,8 @@
 <br/>
 
 ### 메인 페이지 (디데이 타이머)
+
+![11](https://github.com/Plush777/HBD-SJY/assets/87457620/14391234-d8cb-4f89-ba7c-23aedb9c1236)
 
 디데이 계산 타이머는 [이 게시글](https://goddino.tistory.com/29) 을 참고했습니다! <br/>
 생일 전 , 생일 당일, 생일 이후를 구하여 문구와 버튼 상태를 각각 변경해주었습니다.
@@ -119,6 +147,10 @@ $(document).on('click', '#btnGift', function(e) {
 <br/>
 
 ### 편지 페이지
+
+![22](https://github.com/Plush777/HBD-SJY/assets/87457620/70432097-5a2f-4c6c-8f8d-cbc242e2a485)
+
+
 편지 애니메이션은 [dribble envelope open](https://dribbble.com/shots/14338109-Envelope-Open-Animation-with-Hearts) 글을 참고했습니다. <br/>
 편지를 클릭하면 주의 팝업이 뜨고, 알았어요 버튼을 누르면 해당 링크로 이동합니다.
 
@@ -128,6 +160,8 @@ $(document).on('click', '#btnGift', function(e) {
 <br/>
 
 ### 노래 메시지 페이지
+
+![33](https://github.com/Plush777/HBD-SJY/assets/87457620/bbe9c684-cd88-407c-8fa6-bb9118472594)
 
 ```html
 <div class="lyricsWrapper">
@@ -153,7 +187,7 @@ $(document).on('click', '#btnGift', function(e) {
 </div>
 ```
 
-html에서 보여줄 노래 가사들을 먼저 짜고, js에서 개수랑 시간을 배열로 담아서 <br/>
+html에서 보여줄 노래 가사들을 먼저 작성하고, js에서 개수랑 시간을 배열로 담아서 <br/>
 for문과 setTimeout을 통해 지정한 시간대로 보여줄 수 있도록 해주었습니다.
 
 시간 구하는건 노래 타이밍에 맞춰야 했기 때문에 노래 들으면서 직접 맞췄습니다... 😂😂
@@ -187,10 +221,12 @@ for (let i = 0; i < timerIndexArr.length; i++) {
 
 ### 공유 및 댓글 페이지
 
+![44](https://github.com/Plush777/HBD-SJY/assets/87457620/b4e5398b-35ff-48a2-8186-c3870ed8823d)
+
 sns 공유는 카카오 공유 api를 사용하였고 페이스북이랑 트위터는 공유 url을 따로 제공하길래<br/>
 아래처럼 작성했습니다~
 
-댓글의 경우는 직접 만들기엔 머리가 딸려서 (?) [Disqus](https://disqus.com/) 라는 해외 무료 댓글 서비스가 <br/>
+댓글의 경우는 직접 만들 자신이 없어서 [Disqus](https://disqus.com/) 라는 해외 무료 댓글 서비스가 <br/>
 있길래 이 친구를 사용했습니다 😊
 
 ```js
@@ -210,7 +246,40 @@ function sendFacebook() {
 
 <br/>
 
-### 출처
+### 일정 시간마다 파비콘 바꾸기
+
+[네이버코드](https://code.naver.com/main/) 사이트 가보니, 파비콘이 일정 시간마다 바뀌길래 좋은 아이디어인 것 같아서 저도 따라해봤습니다 (?) <br/>
+네이버 코드에서는 svg 코드를 data URI 형식으로 바꿔서 쓰는 것 같은데, 아무리 해봐도 안되서 그냥 png로 했습니다. <br/>
+
+그리고 모바일 기기에서는 파비콘 때문인지는 모르겠으나, 사이트 자체가 느려지는 것 같아서 <br/>
+해상도가 768 이상일때만 파비콘을 바꾸도록 작업했습니다.
+
+```html
+<link rel="shortcut icon" id="favi" href="./images/ico/ico-favicon01.png" />
+```
+```js
+if (window.matchMedia('(max-width: 768px)').matches) {
+    return;
+} else {
+    const f = document.getElementById('favi');
+    let i = 0;
+
+    setInterval(() => {
+        i = (i + 1) % 4;
+        f.href = `../images/ico/ico-favicon0${i + 1}.png`;
+    }, 2000);
+}
+```
+
+
+<br/>
+
+## 끝!
+
+<br/>
+
+## 출처
 
 - 노래 : [스트레이키즈 (StrayKids) - 잘하고있어](https://youtu.be/8W3VnY2V-cw?si=8_SGELHile_yKjzh)
 - 폰트 : [나눔손글씨 중학생](https://clova.ai/handwriting/list.html#)
+- 파비콘 : [Free Favicon Maker](https://formito.com/tools/favicon)
