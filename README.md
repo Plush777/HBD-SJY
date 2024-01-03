@@ -8,7 +8,7 @@
 - 배포 : netlify
 - 기간 : 2023.12.23 ~ 2023.12.31 (약 8일)
 - 참고 사이트들 : [4시간 안에 동생 생일기념🎉 웹사이트 만들기 대작전!](https://velog.io/@yyeonggg/%EB%8F%99%EC%83%9D-%EC%83%9D%EC%9D%BC%EA%B8%B0%EB%85%90-%EB%9A%9D%EB%94%B1%EB%9A%9D%EB%94%B1-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0) , [HTML5 birthday by ayusharma](https://github.com/ayusharma/birthday) , [네이버코드](https://code.naver.com/main/)
-- 후기 :
+- 후기 : [Velog - 🥳동생의 15번째 생일을 축하하는 웹사이트🥳](https://velog.io/@sky/%EB%8F%99%EC%83%9D%EC%9D%98-15%EB%B2%88%EC%A7%B8-%EC%83%9D%EC%9D%BC%EC%9D%84-%EC%B6%95%ED%95%98%ED%95%98%EB%8A%94-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8)
 
 <br>
 
